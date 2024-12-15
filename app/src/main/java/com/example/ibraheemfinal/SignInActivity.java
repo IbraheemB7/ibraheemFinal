@@ -1,6 +1,7 @@
 package com.example.ibraheemfinal;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -10,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class SignInActivity extends AppCompatActivity {
@@ -39,20 +41,20 @@ public class SignInActivity extends AppCompatActivity {
         String email = etEmail.getText().toString();// استخراج النص من حقل الايميل
         String password = etPassword.getText().toString();//استخراج نص كلمة المرور
         // قحص الايميل ان كان طوله اقل من 6 او لا يحوي @ فهو خطأ
-        if (email.length() < 6 || email.contains("@")==false
+        if (email.length() < 6 || email.contains("@")==false)
         {
             // تعديل المتغير ليدل على ان القحص يعطي نتيجة خاطئه
             isALLOK = false;
             //عرض ملاحظة خطا على الشاشة داحل حقل البريد
             etEmail.setError("Wrong Email");
         }
-        if(password.length() < 8 || password.contains(("") == true))
+        if(password.length() < 8 || password.contains("") == true)
         {
             isALLOK = false;
             etPassword.setError("Wrong Password");
         }
         if (isALLOK)
-            Toast.makeText(this, "ALL OK", Toast.LENGTH_SHORT.show());
+            Toast.makeText(this, "ALL OK", Toast.LENGTH_SHORT).show();
 
 
 

@@ -38,36 +38,12 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tvImportance"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="importance:"
-            android:textSize="25dp" />
-
-        <SeekBar
-            android:id="@+id/skbrImportance"
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="20dp"
-            android:max="5"
-            android:progress="1"
-            android:progressTint="#00BCD4" />
-
-        <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Subject (Choose or Write)"
+            android:text="Add a request:"
             android:textSize="25dp" />
-
-        <AutoCompleteTextView
-            android:id="@+id/etSubject"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -79,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="#CDDC39"
-                android:hint="Short Title" />
+                android:hint="Title" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -92,7 +68,28 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="#CDDC39"
-                android:hint="Text" />
+                android:hint="Explain your request details" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#CDDC39"
+                android:hint="Phone number"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/etUploadPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
     </LinearLayout>
+
 </RelativeLayout>
