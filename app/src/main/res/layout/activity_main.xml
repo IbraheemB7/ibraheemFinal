@@ -6,36 +6,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAdd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:clickable="true"
-        android:src="@android:drawable/ic_input_add" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Spinner
-            android:id="@+id/spnrSubject"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
-        <ListView
-            android:id="@+id/lstvTasks"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#B95ACD" />
-
-        <SearchView>
-
-        </SearchView>
-    </LinearLayout>
-
-</RelativeLayout>
+    tools:context=".MainActivity"/>
