@@ -9,11 +9,13 @@
       android:layout_height="wrap_content"
       android:orientation="horizontal"
       android:padding="8dp"
-      android:background="#E0E0E0"> <ImageView
-      android:layout_width="48dp"
-      android:layout_height="48dp"
-      android:src="@drawable/menu_icon"
-      android:contentDescription="Menu" />
+      android:background="#E0E0E0">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Menu"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
 
     <EditText
         android:layout_width="0dp"
@@ -21,11 +23,13 @@
         android:layout_weight="1"
         android:hint="Search"
         android:layout_marginHorizontal="8dp"
-        android:background="#FFFFFF" /> <ImageView
+        android:background="#FFFFFF" />
+
+    <ImageView
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:src="@drawable/logo_icon"
-        android:contentDescription="Logo" />
+        android:contentDescription="Logo"
+        android:src="@android:drawable/btn_star_big_on" />
   </LinearLayout>
 
   <HorizontalScrollView
